@@ -14,7 +14,7 @@ jobs:
           python-version: '3.x'
       - name: Bot Test ausführen
         env:
-          TOKEN: ${{ secrets.TOKEN }}
-          CHAT_ID: ${{ secrets.CHAT_ID }}
+          TOKEN: $8723958111:AAHmAE-l960x94B51sAywFusC0AnvyOrShQ
+          CHAT_ID: $7354994362
         run: |
           python -c "import requests, os; requests.post(f'https://api.telegram.org/bot{os.getenv('TOKEN')}/sendMessage', json={'chat_id': os.getenv('CHAT_ID'),'text':'✅ Test erfolgreich!'})"
